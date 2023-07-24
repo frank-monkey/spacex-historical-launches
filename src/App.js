@@ -14,7 +14,7 @@ function App() {
     fetchLaunches();
   }, []);
   return (
-      <div>
+      <div className="app-container">
         <h1>Historical SpaceX Launches</h1>
         <p>There were a total of {launches.length} launches 🚀</p>
       </div>
