@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './LaunchEntry.css';
 
 const LaunchEntry= ({ launch }) => {
   const [showDetails, setShowDetails] = useState(false);
@@ -9,7 +10,8 @@ const LaunchEntry= ({ launch }) => {
     launch_date_utc,
     details,
     success,
-    links: { video_link },
+    links: { video_link, wikipedia },
+    mission_name
   } = launch;
 
   const formattedDate = new Date(launch_date_utc).toLocaleDateString();
@@ -20,6 +22,7 @@ const LaunchEntry= ({ launch }) => {
 
   return (
     <div onClick={toggleDetails}>
+      <h2>{mission_name}</h2>
       <p>Rocket Name: {rocket_name}</p>
       <p>Launch Site: {site_name}</p>
       <p>Date of Launch: {formattedDate}</p>
@@ -31,12 +34,19 @@ const LaunchEntry= ({ launch }) => {
       />
       {showDetails && (
         <div>
-          {details && <p>Details: {details}</p>}
+          {<p>Details: {details || "No details available."}</p>}
           <p>Success: {success ? 'Yes' : 'No'}</p>
           {video_link && (
             <p>
-              <a href={video_link} target="_blank" rel="noopener noreferrer">
+              <a href={video_link} target="_blank" rel="noopener noreferrer" className="link-button">
                 Watch Launch on YouTube
+              </a>
+            </p>
+          )}
+          {wikipedia && 
+            (<p>
+              <a href={wikipedia} target="_blank" rel="noopener noreferrer" className="link-button">
+                Read on Wikipedia
               </a>
             </p>
           )}
