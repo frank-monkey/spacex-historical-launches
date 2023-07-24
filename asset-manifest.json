@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/spacex-historical-launches/static/css/main.6b3f42d8.css",
+    "main.js": "/spacex-historical-launches/static/js/main.a2f0d19b.js",
+    "static/js/787.d9f86df7.chunk.js": "/spacex-historical-launches/static/js/787.d9f86df7.chunk.js",
+    "static/media/spacex_logo.webp": "/spacex-historical-launches/static/media/spacex_logo.11d3329e7732f0d2855e.webp",
+    "index.html": "/spacex-historical-launches/index.html",
+    "main.6b3f42d8.css.map": "/spacex-historical-launches/static/css/main.6b3f42d8.css.map",
+    "main.a2f0d19b.js.map": "/spacex-historical-launches/static/js/main.a2f0d19b.js.map",
+    "787.d9f86df7.chunk.js.map": "/spacex-historical-launches/static/js/787.d9f86df7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b3f42d8.css",
+    "static/js/main.a2f0d19b.js"
+  ]
+}
