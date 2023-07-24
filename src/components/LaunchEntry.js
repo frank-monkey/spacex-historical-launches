@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './LaunchEntry.css';
+import default_patch from '../assets/spacex_logo.webp';
 
 const LaunchEntry= ({ launch }) => {
   const [showDetails, setShowDetails] = useState(false);
@@ -27,7 +28,7 @@ const LaunchEntry= ({ launch }) => {
       <p>Launch Site: {site_name}</p>
       <p>Date of Launch: {formattedDate}</p>
       <img
-        src={launch.links.mission_patch_small}
+        src={launch.links.mission_patch_small || default_patch}
         alt="Mission Patch"
         width={200}
         height={200}
