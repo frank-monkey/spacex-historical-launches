@@ -24,8 +24,6 @@ const LaunchEntry= ({ launch }) => {
   return (
     <div onClick={toggleDetails}>
       <h2>{mission_name}</h2>
-      <p>Rocket Name: {rocket_name}</p>
-      <p>Launch Site: {site_name}</p>
       <p>Date of Launch: {formattedDate}</p>
       <img
         src={launch.links.mission_patch_small || default_patch}
@@ -35,6 +33,8 @@ const LaunchEntry= ({ launch }) => {
       />
       {showDetails && (
         <div>
+          <p>Rocket: {rocket_name}</p>
+          <p>Launch Site: {site_name}</p>
           {<p>Details: {details || "No details available."}</p>}
           <p>Success: {success ? 'Yes' : 'No'}</p>
           {video_link && (
