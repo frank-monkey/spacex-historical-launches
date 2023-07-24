@@ -1,7 +1,7 @@
 # SpaceX Historical Launches Viewer
 
-![SpaceX Historical Launches Viewer](screenshot.png)
 [View live webpage here](https://frank-monkey.github.io/spacex-historical-launches/)
+![SpaceX Historical Launches Viewer](screenshot.png)
 
 This is a React web application that allows users to explore historical SpaceX rocket launches. The app fetches data from the SpaceX Data API and provides a user-friendly interface to view details on each mission.
 
